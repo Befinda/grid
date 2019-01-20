@@ -5,7 +5,7 @@
 body,
 html {
   height: 100%;
-  background-color: beige;
+  background-color: #FFFF99;
 }
 body .container,
 html .container {
@@ -14,13 +14,15 @@ html .container {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background-color: #FFFFFF;
 }
 body .container .header,
 html .container .header {
   flex: 0 0 auto;
   height: 200px;
-  background-color: blanchedalmond;
+  background-color: #CCFF33;
   text-align: center;
+  width: 100%;
 }
 body .container .header h1,
 html .container .header h1 {
@@ -35,7 +37,7 @@ body .container .footer,
 html .container .footer {
   flex: 0 0 auto;
   height: 100px;
-  background-color: coral;
+  background-color: #CCFF33;
   text-align: center;
   padding: 20px;
 }
