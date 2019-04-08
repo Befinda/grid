@@ -6,15 +6,32 @@
   font-family: Alica;
   src: url('fonts/alice-regular-webfont.woff2') format('woff2'), url('fonts/alice-regular-webfont.woff') format('woff');
 }
+.primary-0 {
+  color: #ffff00;
+}
+/* Основной Цвет */
+.primary-1 {
+  color: #999933;
+}
+.primary-2 {
+  color: #666600;
+}
+.primary-3 {
+  color: #ffff99;
+}
+.primary-4 {
+  color: #ffffff;
+}
 body,
 html {
   height: 100%;
+  width: 100%;
   background-color: #FFFF99;
   font-family: Alica, 'Times New Roman', Times, serif;
 }
 body .container,
 html .container {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -26,12 +43,33 @@ body .container .header,
 html .container .header {
   flex: 0 0 auto;
   min-height: 200px;
+  height: 400px;
   background-color: #FFFF33;
+  text-align: center;
+  color: #1b1b1b;
+}
+body .container .header a#buttonUp,
+html .container .header a#buttonUp {
+  color: #fff;
+  display: block;
+  position: fixed;
+  bottom: 85px;
+  right: 85px;
+  z-index: 1000;
+  z-index: 1004;
+  width: 68px;
+  height: 48px;
+  background: #666600;
+  border-radius: 50%;
+  padding-top: 10px;
+  text-decoration: none;
   text-align: center;
 }
 body .container .header h1,
 html .container .header h1 {
-  margin-top: 50px;
+  margin-top: 120px;
+  text-shadow: 2px 1px 2px rgba(102, 102, 0, 0.8);
+  color: #646464;
 }
 body .container .content,
 html .container .content {
@@ -42,6 +80,19 @@ html .container .content {
 body .container .content li,
 html .container .content li {
   list-style-type: none;
+}
+body .container .content #works,
+html .container .content #works {
+  height: 400px;
+}
+body .container .content #contact,
+html .container .content #contact {
+  height: 400px;
+}
+body .container .content h2,
+html .container .content h2 {
+  color: #666600;
+  text-transform: uppercase;
 }
 body .container .footer,
 html .container .footer {
