@@ -4,7 +4,9 @@
 }
 @font-face {
   font-family: Alica;
-  src: url('fonts/alice-regular-webfont.woff2') format('woff2'), url('fonts/alice-regular-webfont.woff') format('woff');
+  src: url('fonts/alice-regular-webfont.woff2') format('woff2'), url('fonts/alice-regular-webfont.woff') format('woff'), url('fonts/Alice-Regular-webfont.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 .primary-0 {
   color: #ffff00;
@@ -44,9 +46,10 @@ html .container .header {
   flex: 0 0 auto;
   min-height: 200px;
   height: 400px;
-  background-color: #FFFF33;
+  background-color: #ffff00;
+  background: linear-gradient(to bottom, #ffff00, #ffff00 40%, #ffff99);
   text-align: center;
-  color: #1b1b1b;
+  color: #323232;
 }
 body .container .header a#buttonUp,
 html .container .header a#buttonUp {
@@ -77,13 +80,40 @@ html .container .content {
   padding: 20px;
   text-align: center;
 }
-body .container .content li,
-html .container .content li {
-  list-style-type: none;
-}
 body .container .content #works,
 html .container .content #works {
-  height: 400px;
+  min-height: 400px;
+  margin: 0 auto;
+}
+body .container .content #works ul,
+html .container .content #works ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+body .container .content #works ul li,
+html .container .content #works ul li {
+  list-style-type: none;
+}
+body .container .content #works ul li a,
+html .container .content #works ul li a {
+  display: block;
+  min-height: 200px;
+  max-width: 200px;
+  border: 2px solid #666600;
+  background: linear-gradient(to top, #ffff99, #ffffff);
+  margin: 20px;
+  padding: 10px;
+}
+body .container .content #works ul li a p,
+html .container .content #works ul li a p {
+  color: #323232;
+}
+body .container .content #works ul li a:hover,
+html .container .content #works ul li a:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  text-decoration: none;
 }
 body .container .content #contact,
 html .container .content #contact {
@@ -98,14 +128,20 @@ body .container .footer,
 html .container .footer {
   flex: 0 0 auto;
   min-height: 100px;
-  background-color: #CCFF33;
+  background-color: #999933;
   text-align: center;
   padding: 20px;
   font-size: 10px;
   text-align: right;
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 400px) {
   .container {
     max-width: 300px;
+  }
+  html .container .header a#buttonUp {
+    display: none;
+  }
+  html .container .content #works ul {
+    flex-direction: column;
   }
 }
