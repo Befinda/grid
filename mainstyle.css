@@ -119,6 +119,12 @@ body .container .content #contact,
 html .container .content #contact {
   height: 400px;
 }
+body .container .content #contact li img,
+html .container .content #contact li img {
+  height: 100px;
+  width: 100px;
+  color: #ffff00;
+}
 body .container .content h2,
 html .container .content h2 {
   color: #666600;
