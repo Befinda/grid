@@ -119,11 +119,16 @@ body .container .content #contact,
 html .container .content #contact {
   height: 400px;
 }
-body .container .content #contact li img,
-html .container .content #contact li img {
-  height: 100px;
-  width: 100px;
-  fill: #ffff00;
+body .container .content #contact ul,
+html .container .content #contact ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+body .container .content #contact ul li,
+html .container .content #contact ul li {
+  margin: 20px 40px;
 }
 body .container .content h2,
 html .container .content h2 {
