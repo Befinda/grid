@@ -50,4 +50,15 @@ q:before, q:after {
 }
 
 /* конец кода сброса стилей браузера */
+@font-face {
+  font-family: Alica;
+  src: url("style/fonts/alice-regular-webfont.woff2") format("woff2"), url("style/fonts/alice-regular-webfont.woff") format("woff"), url("style/fonts/Alice-Regular-webfont.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Alica, 'Times New Roman', Times, serif;
+  background-color: #ffff99;
+}
 /*# sourceMappingURL=prstyle.css.map */

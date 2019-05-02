@@ -1,3 +1,9 @@
 @import 'helpers/variables';
 @import 'helpers/mixins';
 @import 'base/reset';
+@import 'base/typografics';
+body{
+    font-family: Alica, 'Times New Roman', Times, serif;
+    background-color: $second-lightcolor;
+    
+}
