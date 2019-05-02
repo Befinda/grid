@@ -79,6 +79,11 @@ body .container {
   background-color: white;
 }
 
+body .container .block {
+  min-height: 400px;
+  margin: 0 auto;
+}
+
 body .container .header {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -105,5 +110,18 @@ body .container .content {
           flex: 1 0 auto;
   padding: 20px;
   text-align: center;
+}
+
+body .container .content #works ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=prstyle.css.map */
