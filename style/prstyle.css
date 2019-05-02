@@ -58,7 +58,52 @@ q:before, q:after {
 }
 
 body {
+  height: 100%;
+  width: 100%;
   font-family: Alica, 'Times New Roman', Times, serif;
+  font-size: 1.1em;
   background-color: #ffff99;
+}
+
+body .container {
+  min-width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background-color: white;
+}
+
+body .container .header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  min-height: 200px;
+  height: 300px;
+  background-color: yellow;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 0, 0.8)), color-stop(40%, rgba(255, 255, 0, 0.8)), to(rgba(255, 255, 153, 0.8))), url(../image/background/pattern.png) repeat left top;
+  background: linear-gradient(to bottom, rgba(255, 255, 0, 0.8), rgba(255, 255, 0, 0.8) 40%, rgba(255, 255, 153, 0.8)), url(../image/background/pattern.png) repeat left top;
+  text-align: center;
+  color: #323232;
+}
+
+body .container .header h1 {
+  margin-top: 80px;
+  text-shadow: 2px 1px 2px #666600;
+  color: #464646;
+  font-size: 2.5em;
+}
+
+body .container .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 /*# sourceMappingURL=prstyle.css.map */
