@@ -38,10 +38,44 @@ body{
             flex: 1 0 auto;
             padding: 20px;
             text-align: center; 
+            h2{
+                text-transform: uppercase;
+                color:$primary-darkcolor; 
+            }
             #works ul{
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
+                li{
+                    list-style-type: none;
+                    a{
+                        display: block;
+                        min-height: 200px;
+                        max-width:200px; 
+                        border:2px solid  $primary-darkcolor;
+                        background: $primary-lightcolor;
+                        background: linear-gradient(to top, $second-lightcolor, $primary-lightcolor);
+                        margin: 20px;
+                        padding: 10px; 
+                        p{
+                        color:$color-text;
+                        }
+                        &:hover{
+                        -webkit-transform: scale(1.2);
+                        transform: scale(1.2);
+                        text-decoration: none;
+                        }   
+                    }
+                }
+            }
+            #contact ul{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                list-style-type: none;
+                li{
+                    margin: 20px 40px;
+                }
             }
         }
     

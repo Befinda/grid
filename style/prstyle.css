@@ -124,4 +124,19 @@ body .container .content #works ul {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
+body .container .content #works ul li {
+  list-style-type: none;
+}
+
+body .container .content #works ul li a {
+  display: block;
+  min-height: 200px;
+  max-width: 200px;
+  border: 2px solid #666600;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffff99), to(white));
+  background: linear-gradient(to top, #ffff99, white);
+  margin: 20px;
+  padding: 10px;
+}
 /*# sourceMappingURL=prstyle.css.map */
