@@ -18,6 +18,10 @@ body{
         .block {
             min-height: 400px;
             margin: 0 auto;
+            h2{
+                text-transform: uppercase;
+                color:$primary-darkcolor; 
+            }
             }
         .header{
             flex: 0 0 auto;
@@ -38,10 +42,7 @@ body{
             flex: 1 0 auto;
             padding: 20px;
             text-align: center; 
-            h2{
-                text-transform: uppercase;
-                color:$primary-darkcolor; 
-            }
+            
             #works ul{
                 display: flex;
                 justify-content: center;
@@ -77,6 +78,7 @@ body{
                     margin: 20px 40px;
                 }
             }
+
         }
     
     }

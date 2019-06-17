@@ -84,6 +84,11 @@ body .container .block {
   margin: 0 auto;
 }
 
+body .container .block h2 {
+  text-transform: uppercase;
+  color: #666600;
+}
+
 body .container .header {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -134,9 +139,38 @@ body .container .content #works ul li a {
   min-height: 200px;
   max-width: 200px;
   border: 2px solid #666600;
+  background: white;
   background: -webkit-gradient(linear, left bottom, left top, from(#ffff99), to(white));
   background: linear-gradient(to top, #ffff99, white);
   margin: 20px;
   padding: 10px;
+}
+
+body .container .content #works ul li a p {
+  color: #323232;
+}
+
+body .container .content #works ul li a:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  text-decoration: none;
+}
+
+body .container .content #contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+}
+
+body .container .content #contact ul li {
+  margin: 20px 40px;
 }
 /*# sourceMappingURL=prstyle.css.map */
